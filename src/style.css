@@ -14,27 +14,30 @@ html{
 header {
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #202020;
   border: 1px;
   border-color: #E9E9E9;
+  height: 72px;
 }
 .logo{
-
   width: 134.26336669921875px;
   height: 19.935205459594727px;
   margin: 11.39px 9.82px;
 }
-header button{
-  color: #202020;
-  cursor: pointer;
-  border: none;
+.header-a{
+  display: inline-block; /* Устанавливаем элемент как блочный */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Сохраняем цвет текста родительского элемента */
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Добавляем указатель мыши в виде руки для кликабельности */
+  /* Выравнивание текста по вертикали */
+  text-align: center; /* Выравнивание текста по горизонтали */
   border-radius: 4px;
   background-color: #ffffff;
   font: var(--font-Hind);
-  padding: 13px 24px;
+  line-height: 55px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
   letter-spacing: 0;
 }
 .btn-home{
@@ -51,8 +54,12 @@ header button{
 .btn-shop{
   width: 56px;
   height: 56px;
-  padding: 16px;
   background-color: #202020;
+}
+.shop{
+  margin: 16px;
+  width: 24px;
+  height: 24px;
 }
 .hungry{
   background-color: #B1DDE4;
@@ -103,7 +110,7 @@ header button{
 .pick-card{
   width: 427px;
   height: 447px;
-  margin-top: 72px;
+  margin-top: 32px;
   border-radius: 8px;
   gap: 16px;
   background-color: #F9F9F9;
@@ -207,6 +214,98 @@ header button{
   background-color: #FFFFFF;
   border-radius: 32px;
   margin-top: -228px;
+}
+.AwardWinningBanner{
+  display: flex;
+  justify-items: center;
+  background-color: #E5F8BC;
+  padding-left: 56px;
+  padding-right: 57px;
+  margin-top: 63px;
+  overflow: hidden;
+}
+.banner-info{
+  font-weight: 900;
+  font-size: 43.95px;
+  line-height: 56px;
+  width: 539px;
+  height: 168px;
+  margin-top: 112px;
+}
+.banner-title{
+  margin: 0;
+}
+.banner-text{
+  font-weight: 700;
+  margin: 0;
+}
+.btn-banner{
+  background-color: #202020;
+  color: #FFFFFF;
+  width: 265px;
+  height: 56px;
+  margin-top: 40px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  gap: 10px;
+  font: var(--font-Hind);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.banner-mini-cards{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 654px;
+  height: 964px;
+  margin-top: -239px;
+  margin-bottom: -238px;
+  margin-left: auto;
+  border-radius: 8px;
+}
+.banner-column-1{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 202px;
+  height: 964px;
+}
+.banner-column-2{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 202px;
+  height: 634px;
+  margin: 165px 24px;
+}
+.banner-card{
+  width: 202px;
+  height: 305px;
+  border-radius: 8px;
+  background-color: #F9F9F9;
+  margin: auto;
+}
+.banner-card-img{
+  margin: 8px;
+  width: 186px;
+  height: 220px;
+  border-radius: 8px;
+}
+.banner-card-title{
+  width: 135px;
+  height: 29px;
+  margin: 16px 34px;
+  font: var(--font-Hind);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #2C2C2C;
 }
 
 

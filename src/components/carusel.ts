@@ -15,9 +15,9 @@ const moveContainer = (container: HTMLElement, btnLeft: HTMLButtonElement, btnRi
 
 /**
  * Инициализация карусели
- * @param container html элемент
- * @param btnLeft
- * @param btnRight
+ * @param container html элемент который будет крутиться
+ * @param btnLeft html button element, кнопка влево
+ * @param btnRight html button element, кнопка враво
  */
 export function initCarusel(container: HTMLElement, btnLeft: HTMLButtonElement, btnRight: HTMLButtonElement) {
     let containerOffset = 0;
