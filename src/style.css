@@ -65,15 +65,15 @@ header {
   padding-top: 131px;
 }
 .hungry-title{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 43.95px;
   line-height: 56px;
   text-align: center;
   color: #2C2C2C;
   margin: 0;
 }
-.main-title b{
-  font-weight: 700;
+.hungry-b{
+  font-weight: 900;
 }
 .hungry a{
   display: inline-block; /* Устанавливаем элемент как блочный */
