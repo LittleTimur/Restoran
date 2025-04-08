@@ -6,3 +6,17 @@ const btnRight = document.querySelector<HTMLButtonElement>('.favourite-picks .bt
 if (container && btnLeft && btnRight) {
     initCarusel(container, btnLeft, btnRight)
 }
+
+const container2 = document.querySelector<HTMLElement>('.new-arrivals-container')
+const btnLeft2 = document.querySelector<HTMLButtonElement>('.new-arrivals .btn-left')
+const btnRight2 = document.querySelector<HTMLButtonElement>('.new-arrivals .btn-right')
+if (container2 && btnLeft2 && btnRight2) {
+    initCarusel(container2, btnLeft2, btnRight2)
+}
+
+const container3 = document.querySelector<HTMLElement>('.categories-container')
+const btnLeft3 = document.querySelector<HTMLButtonElement>('.categories .btn-left')
+const btnRight3 = document.querySelector<HTMLButtonElement>('.categories .btn-right')
+if (container3 && btnLeft3 && btnRight3) {
+    initCarusel(container3, btnLeft3, btnRight3)
+}

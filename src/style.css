@@ -90,11 +90,11 @@ header {
 }
 .Ladies{
   margin-top: -29px;
+  margin-bottom: -4px;
   width: 100%;
 }
 .favourite-picks{
-  margin-right: 25px;
-  padding: 72px 0 0 72px;
+  margin: 72px 57px 0 56px;
   overflow: hidden;
 }
 .favourite-picks__title{
@@ -113,6 +113,8 @@ header {
 }
 .pick-card{
   width: 427px;
+  min-width: 427px;   /* Минимальная ширина */
+  max-width: 427px;
   height: 447px;
   margin-top: 32px;
   border-radius: 8px;
@@ -226,6 +228,7 @@ header {
   background-color: #FFFFFF;
   border-radius: 32px;
   margin-top: -228px;
+  left: 33px;
 }
 .AwardWinningBanner{
   display: flex;
@@ -324,6 +327,66 @@ header {
   text-align: center;
   color: #2C2C2C;
 }
-
-
-
+.new-arrivals{
+  margin-top: 70px;
+}
+.categories{
+  height: 272px;
+  margin: 63px 56px 0 56px;
+  overflow: hidden;
+}
+.categories-title{
+  width: 192px;
+  height: 43px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 35.16px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}
+.categories-container{
+  display: flex;
+  gap: 26px;
+  transition: transform 0.3s linear;
+  margin-top: 32px;
+}
+.categories-card{
+  width: 200px;
+  min-width: 200px;   /* Минимальная ширина */
+  max-width: 200px;
+  height: 197px;
+  border-radius: 8px;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.categories-card-img{
+  width: 104px;
+  height: 104px;
+  margin-top: 24px;
+}
+.categories-card-title{
+  display: inline-block; /* Устанавливаем элемент как блочный */
+  text-decoration: none; /* Убираем подчеркивание */
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Добавляем указатель мыши в виде руки для кликабельности */
+  background-color: #F9F9F9;
+  font-family: var(--font-Hind);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #2C2C2C;
+  margin-top: 16px;
+}
+.btn-cat{
+  margin-top: -130px;
+}
+.footer{
+  height: 451px;
+background-color: #2C2C2C;
+  margin-top: 72px;
+}
