@@ -23,11 +23,17 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.hbs"
+            template: "./src/index.hbs",
+            filename: "index.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/categories.hbs",
+            filename: "categories.html"
         }),
         new CopyPlugin({
             patterns: [
                 {from: "./src/style.css", to: "style.css"},
+                {from: "./src/style-categories.css", to: "style-categories.css"},
                 {from: "./src/img", to: "img"},
             ],
         })
