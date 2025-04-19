@@ -3,39 +3,48 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
     resolve: {
-        extensions: ['.js', '.ts']
+        extensions: ['.js', '.ts', '.jsx', '.tsx']
     },
     module: {
         rules: [
             { test: /\.(ts|tsx)$/, loader: "ts-loader" },
             {
-                test: /\.hbs$/,
+                test: /\.hbs|html$/,
                 loader: 'handlebars-loader',
+            },
+            {
+                test: /\.css$/i,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" },
+                ],
             },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.hbs",
+            template: "./src/index.html",
             filename: "index.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/categories.hbs",
-            filename: "categories.html"
         }),
         new CopyPlugin({
             patterns: [
-                {from: "./src/style.css", to: "style.css"},
-                {from: "./src/style-categories.css", to: "style-categories.css"},
                 {from: "./src/img", to: "img"},
             ],
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+        static: {
+        directory: path.join(__dirname, 'dist'),
+        },
+        port: 3000,
+        open: true,
+    },
 };
