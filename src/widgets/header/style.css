@@ -1,0 +1,52 @@
+.container {
+    padding: 0 56px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    color: #202020;
+    border: 1px;
+    border-color: #E9E9E9;
+    height: 72px;
+  }
+  .logo{
+    width: 134.26336669921875px;
+    height: 19.935205459594727px;
+    margin: 11.39px 9.82px;
+  }
+  .header-a{
+    display: inline-block; /* Устанавливаем элемент как блочный */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Сохраняем цвет текста родительского элемента */
+    border: none; /* Убираем рамку */
+    cursor: pointer; /* Добавляем указатель мыши в виде руки для кликабельности */
+    text-align: center; /* Выравнивание текста по горизонтали */
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-family: var(--font-Hind);
+    line-height: 55px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .btn-home{
+    width: 94px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: 8px;
+  }
+  .btn-all-restaurants{
+    width: 159px;
+    height: 55px;
+    margin-right: 24px;
+  }
+  .btn-shop{
+    width: 56px;
+    height: 56px;
+    background-color: #202020;
+  }
+  .shop{
+    margin: 16px;
+    width: 24px;
+    height: 24px;
+  }

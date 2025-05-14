@@ -1,0 +1,29 @@
+html{
+    /*
+      --black-dark: #272727;
+      background-color: var(--black-dark);
+     */
+    --font-Montserrat: "Montserrat", sans-serif;
+    --font-Hind: "Hind", sans-serif;
+    font-family: var(--font-Montserrat);
+  
+  }
+.topbanner{
+    height: 242;
+}
+.banner-photo{
+    height: 242;
+}
+.banner-title{
+    width: 112;
+    height: 64;
+    margin-top: -153px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 43.95px;
+    line-height: 64px;
+    letter-spacing: -5%;
+    text-align: center;
+
+}

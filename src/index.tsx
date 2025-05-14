@@ -2,11 +2,12 @@ import {createRoot} from "react-dom/client"
 import React from 'react';
 import Navi from "./Navigat";
 import HomePage from "./pages/home";
+import Food from "./pages/food";
 
 const rootHtmlElement = document.getElementById('root')
 if (rootHtmlElement) {
     const root = createRoot(rootHtmlElement);
-    root.render(<HomePage />);
+    root.render(<Food />);
 }
 
 // import { initCarusel } from './components/carusel'
