@@ -1,0 +1,32 @@
+.restorans-block-conteiner{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  gap: 24px;
+  }
+  .restoran-block{
+    margin: 32px 56px;
+  }
+  .restorans-title{
+    width: 121px;
+    height: 26px;
+    font-family: var(--font-Hind);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0%;
+    text-decoration-thickness: 0%;
+    color: #797979;
+  }
+
+.restorans-title .link-categories,
+.restorans-title .link-categories-food {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

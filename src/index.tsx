@@ -1,13 +1,17 @@
-import {createRoot} from "react-dom/client"
+import { createRoot } from 'react-dom/client';
 import React from 'react';
-import Navi from "./Navigat";
-import HomePage from "./pages/home";
-import Food from "./pages/food";
+import Navi from './Navigat';
 
-const rootHtmlElement = document.getElementById('root')
+declare const module: {
+  hot?: {
+    accept(path?: string, callback?: () => void): void;
+  };
+};
+
+const rootHtmlElement = document.getElementById('root');
 if (rootHtmlElement) {
-    const root = createRoot(rootHtmlElement);
-    root.render(<Food />);
+  const root = createRoot(rootHtmlElement);
+  root.render(<Navi />);
 }
 
 // import { initCarusel } from './components/carusel'
@@ -32,4 +36,3 @@ if (rootHtmlElement) {
 // if (container3 && btnLeft3 && btnRight3) {
 //     initCarusel(container3, btnLeft3, btnRight3)
 // }
-
