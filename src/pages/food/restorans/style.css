@@ -10,23 +10,22 @@
     margin: 32px 56px;
   }
   .restorans-title{
-    width: 121px;
     height: 26px;
     font-family: var(--font-Hind);
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-underline-offset: 0%;
-    text-decoration-thickness: 0%;
+    
+
     color: #797979;
   }
-
-.restorans-title .link-categories,
-.restorans-title .link-categories-food {
+.link-categories{
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0%;
+  text-decoration-thickness: 0%;
 }

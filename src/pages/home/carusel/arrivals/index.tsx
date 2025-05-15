@@ -35,12 +35,12 @@ const Carusel_Arrivals = (): React.ReactElement => {
           ref={containerRef}
           style={{ transform: `translateX(${offset}px)` }}
         >
-          <Card img="img/pick_img.png" title="Mira" review_text="4.2  Very Good" />
-          <Card img="img/pick_img.png" title="Kara Fin" review_text="4.2  Very Good" />
-          <Card img="img/pick_img.png" title="‘T Kuyltje" review_text="4.2  Very Good" />
-          <Card img="img/pick_img.png" title="Пупупу" review_text="4.9  Very Good" />
-          <Card img="img/pick_img.png" title="Лалала" review_text="4.9  Very Good" />
-          <Card img="img/pick_img.png" title="Я ем людей" review_text="5.0  Very Good" />
+          <Card img="/img/pick_img.png" title="Mira" review_text="4.2  Very Good" />
+          <Card img="/img/pick_img.png" title="Kara Fin" review_text="4.2  Very Good" />
+          <Card img="/img/pick_img.png" title="'T Kuyltje" review_text="4.2  Very Good" />
+          <Card img="/img/pick_img.png" title="Пупупу" review_text="4.9  Very Good" />
+          <Card img="/img/pick_img.png" title="Лалала" review_text="4.9  Very Good" />
+          <Card img="/img/pick_img.png" title="Я ем людей" review_text="5.0  Very Good" />
         </div>
         {offset !== 0 && (
           <button
@@ -50,7 +50,7 @@ const Carusel_Arrivals = (): React.ReactElement => {
               setOffset(prevOffset => moveContainer(containerRef.current, prevOffset, 300))
             }
           >
-            <img className="arrow-left" src="img/arrow-left.svg" alt="" />
+            <img className="arrow-left" src="/img/arrow-left.svg" alt="" />
           </button>
         )}
         {offset !== (containerWidth - document.body.scrollWidth + 115) * -1 && (
@@ -61,7 +61,7 @@ const Carusel_Arrivals = (): React.ReactElement => {
               setOffset(prevOffset => moveContainer(containerRef.current, prevOffset, -300))
             }
           >
-            <img className="arrow-right" src="img/arrow-right.svg" alt="" />
+            <img className="arrow-right" src="/img/arrow-right.svg" alt="" />
           </button>
         )}
       </div>

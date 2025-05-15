@@ -27,6 +27,15 @@ const Carusel_Categories = (): React.ReactElement => {
   const [offset, setOffset] = useState(0);
   const containerWidth = containerRef.current ? containerRef.current.scrollWidth : 0;
 
+  const categories = [
+    { title: 'Pizza', img: '/img/categories-img-1.png' },
+    { title: 'Burger', img: '/img/categories-img-1.png' },
+    { title: 'Sushi', img: '/img/categories-img-1.png' },
+    { title: 'Pasta', img: '/img/categories-img-1.png' },
+    { title: 'Salad', img: '/img/categories-img-1.png' },
+    { title: 'Dessert', img: '/img/categories-img-1.png' },
+  ];
+
   return (
     <>
       <div className="categories">
@@ -36,21 +45,9 @@ const Carusel_Categories = (): React.ReactElement => {
           ref={containerRef}
           style={{ transform: `translateX(${offset}px)` }}
         >
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
-          <Card img="img/categories-img-1.png" title="Pizza" />
+          {categories.map((category, index) => (
+            <Card key={index} img={category.img} title={category.title} />
+          ))}
         </div>
         {offset !== (containerWidth - document.body.scrollWidth + 115) * -1 && (
           <button
@@ -60,7 +57,7 @@ const Carusel_Categories = (): React.ReactElement => {
               setOffset(prevOffset => moveContainer(containerRef.current, prevOffset, -300))
             }
           >
-            <img className="arrow-right" src="img/arrow-right.svg" alt="" />
+            <img className="arrow-right" src="/img/arrow-right.svg" alt="" />
           </button>
         )}
         {offset !== 0 && (
@@ -71,7 +68,7 @@ const Carusel_Categories = (): React.ReactElement => {
               setOffset(prevOffset => moveContainer(containerRef.current, prevOffset, 300))
             }
           >
-            <img className="arrow-left" src="img/arrow-left.svg" alt="" />
+            <img className="arrow-left" src="/img/arrow-left.svg" alt="" />
           </button>
         )}
         <div className="all-categories">

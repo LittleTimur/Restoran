@@ -30,7 +30,7 @@ html{
     font-weight: 700;
     font-size: 43.95px;
     line-height: 64px;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     text-align: center;
     color: white;
     z-index: 1;

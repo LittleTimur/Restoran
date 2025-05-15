@@ -11,7 +11,7 @@ const CategSectionCard: React.FC<Props> = ({ img, title }): React.ReactElement =
     <>
       <div className="categories-section-card">
         <img className="categories-section-card-img" src={img} alt="" />
-        <Link to="/categories/food" className="categories-section-card-link">
+        <Link to={`/categories/${title.toLowerCase()}`} className="categories-section-card-link">
           {title}
         </Link>
       </div>

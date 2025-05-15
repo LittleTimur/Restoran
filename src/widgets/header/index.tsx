@@ -7,7 +7,7 @@ const Header = (): React.ReactElement => {
     <>
       <header className="header container">
         <Link to="/">
-        <img className="logo" src="img/logo.svg" alt="" />
+        <img className="logo" src="/img/logo.svg" alt="" />
         </Link>
         <Link to="/" className="header-a btn-home">
         Home
@@ -16,7 +16,7 @@ const Header = (): React.ReactElement => {
         All restaurants
         </Link>
         <Link to="/" className="header-a btn-shop">
-        <img className="shop" src="img/shop.svg" alt="" />
+        <img className="shop" src="/img/shop.svg" alt="" />
         </Link>
       </header>
     </>

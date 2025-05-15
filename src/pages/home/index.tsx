@@ -17,13 +17,13 @@ const HomePage = (): React.ReactElement => {
             <b className="hungry-b">Hungry?</b> Find your next meal
           </h2>
           <a href="index.html"></a>
-          <img className="Ladies" src="img/Ladies.svg" alt="" />
+          <img className="Ladies" src="/img/Ladies.svg" alt="" />
         </div>
         <Carusel_Pick />
         <Banner />
         <Carusel_Arrivals />
         <Carusel_Categories />
-        <Footer logo="img/logo-in-footer.svg" />
+        <Footer logo="/img/logo-in-footer.svg" />
       </main>
     </>
   );

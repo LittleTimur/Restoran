@@ -11,7 +11,7 @@ const Card: React.FC<Props> = ({ img, title }): React.ReactElement => {
     <>
       <div className="categories-card">
         <img className="categories-card-img" src={img} alt="" />
-        <Link to="/categories/food" className="categories-card-title">
+        <Link to={`/categories/${title.toLowerCase()}`} className="categories-card-title">
           {title}
         </Link>
       </div>

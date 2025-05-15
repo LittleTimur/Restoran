@@ -10,7 +10,7 @@ const Navi = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/categories" element={<CategPage />} />
-        <Route path="/categories/food" element={<Food />} />
+        <Route path="/categories/:category" element={<Food />} />
       </Routes>
     </Router>
   );
