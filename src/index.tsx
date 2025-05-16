@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import React from 'react';
 import Navi from './Navigat';
+import './style.css';
 
 declare const module: {
   hot?: {

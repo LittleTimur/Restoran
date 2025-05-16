@@ -5,26 +5,25 @@ import RestoranCard from './restoran_card';
 
 interface Props {
   title: string;
-  link: string;
 }
 
-const Restorans: React.FC<Props> = ({ title, link }): React.ReactElement => {
+const Restorans: React.FC<Props> = ({ title }): React.ReactElement => {
   return (
     <>
       <div className="restoran-block">
         <div className="restorans-title">
             <Link to="/categories" className="link-categories">
-            {link}
+            categories
             </Link>
             {' '}/{' '}{title}         
         </div>
         <div className="restorans-block-conteiner">
-            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" />
-            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" />
-            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" />
-            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" />
-            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" />
-            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" />
+            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" food = {title}/>
+            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" food = {title}/>
+            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" food = {title}/>
+            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" food = {title}/>
+            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" food = {title}/>
+            <RestoranCard img="/img/food-categories-restoran.png" title="Mira" review_text="4.2  Very Good" food = {title}/>
         </div>
       </div>
     </>

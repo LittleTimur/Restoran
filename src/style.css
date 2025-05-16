@@ -1,0 +1,10 @@
+html{
+    /*
+      --black-dark: #272727;
+      background-color: var(--black-dark);
+     */
+    --font-Montserrat: "Montserrat", sans-serif;
+    --font-Hind: "Hind", sans-serif;
+    font-family: var(--font-Montserrat);
+  
+  }

@@ -5,6 +5,7 @@ import Carusel_Pick from './carusel/pick';
 import Carusel_Arrivals from './carusel/arrivals';
 import Carusel_Categories from './carusel/categories';
 import Footer from '../../widgets/Footer';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const HomePage = (): React.ReactElement => {
@@ -16,7 +17,7 @@ const HomePage = (): React.ReactElement => {
           <h2 className="hungry-title">
             <b className="hungry-b">Hungry?</b> Find your next meal
           </h2>
-          <a href="index.html"></a>
+          <Link to="/" className='hungry-button'></Link>
           <img className="Ladies" src="/img/Ladies.svg" alt="" />
         </div>
         <Carusel_Pick />

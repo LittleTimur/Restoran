@@ -16,7 +16,7 @@ const Food = (): React.ReactElement => {
         <img className="food-banner-photo" src={`/img/food-title-${category}.png`} alt="" />
         <div className="food-banner-title">{categoryTitle}</div>
       </div>
-      <Restorans title={category || ''} link="categories" />
+      <Restorans title={category || ''} />
       <Footer logo="/img/logo-in-footer.svg" />
     </>
   );

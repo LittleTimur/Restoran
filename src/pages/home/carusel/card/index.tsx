@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface Props {
   img: string;
@@ -14,18 +15,18 @@ const Card: React.FC<Props> = ({ img, title, review_text }): React.ReactElement 
           <img className="pick_img" src={img} alt="" />
         </div>
         <div className="pick-card-content">
-          <a href="index.html" className="pick-card-title">
+          <Link to={`/restorans/${title.toLowerCase()}`} className="pick-card-title">
             {title}
-          </a>
+          </Link>
           <div className="pick-card-review">
             <img className="star" src="/img/star.svg" alt="" />{' '}
             <h4 className="review-text">{review_text}</h4>
           </div>
           <h6 className="pick-card-description">Nicest place for burgers</h6>
           <div className="pick-card-category">
-            <a href="index.html" className="btn-category">
+            <Link to='/' className="btn-category">
               Comfort food
-            </a>
+            </Link>
           </div>
         </div>
       </div>

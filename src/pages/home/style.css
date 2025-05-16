@@ -1,13 +1,3 @@
-html{
-  /*
-    --black-dark: #272727;
-    background-color: var(--black-dark);
-   */
-  --font-Montserrat: "Montserrat", sans-serif;
-  --font-Hind: "Hind", sans-serif;
-  font-family: var(--font-Montserrat);
-
-}
 .hungry{
   background-color: #B1DDE4;
   padding-top: 131px;
@@ -23,7 +13,7 @@ html{
 .hungry-b{
   font-weight: 900;
 }
-.hungry a{
+.hungry-button{
   display: inline-block; /* Устанавливаем элемент как блочный */
   text-decoration: none; /* Убираем подчеркивание */
   border: none; /* Убираем рамку */

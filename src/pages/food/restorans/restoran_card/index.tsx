@@ -6,16 +6,17 @@ interface Props {
     img: string;
     title: string;
     review_text: string;
+    food: string;
   }
 
-const RestoranCard: React.FC<Props> = ({ img, title, review_text }): React.ReactElement => {
+const RestoranCard: React.FC<Props> = ({ img, title, review_text, food }): React.ReactElement => {
   return (<>
     <div className="restoran-card">
         <div>
           <img className="restoran_img" src={img} alt="" />
         </div>
         <div className="restoran-card-content">
-          <Link to="/categories" className="restoran-card-title">
+          <Link to={`/categories/${food.toLowerCase()}/${title.toLowerCase()}`} className="restoran-card-title">
           {title}
           </Link>
           <div className="restoran-card-review">
