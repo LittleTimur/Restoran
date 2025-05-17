@@ -17,7 +17,7 @@ const RestoranPage = (): React.ReactElement => {
         <div className="restoran-banner-title">{restoranTitle}</div>
       </div>
       <RestoranAbout title={restoran || ''} link={category || ''} />
-      <Footer logo="/img/logo-in-footer.svg" />
+      <Footer />
     </>
   );
 };

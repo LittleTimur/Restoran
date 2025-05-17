@@ -24,7 +24,7 @@ const HomePage = (): React.ReactElement => {
         <Banner />
         <Carusel_Arrivals />
         <Carusel_Categories />
-        <Footer logo="/img/logo-in-footer.svg" />
+        <Footer />
       </main>
     </>
   );

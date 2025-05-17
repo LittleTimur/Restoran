@@ -17,7 +17,7 @@ const Food = (): React.ReactElement => {
         <div className="food-banner-title">{categoryTitle}</div>
       </div>
       <Restorans title={category || ''} />
-      <Footer logo="/img/logo-in-footer.svg" />
+      <Footer />
     </>
   );
 };

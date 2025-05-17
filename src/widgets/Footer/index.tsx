@@ -1,16 +1,21 @@
 import React from 'react';
 import Footer_Block from './block';
+import { useLocation } from 'react-router-dom';
 import './style.css';
 
-interface Props {
-  logo: string;
-}
 
-const Footer: React.FC<Props> = ({ logo }): React.ReactElement => {
+const Footer = (): React.ReactElement => {
+  const location = useLocation();
+  const isCategoriesPage = location.pathname === '/categories';
+
   return (
     <>
       <div className="footer">
-        <img className="logo-in-footer" src={logo} alt="" />
+        {isCategoriesPage ? (
+          <img className="logo-in-footer" src="/img/logo-in-footer-green.svg" alt="" />
+        ) : (
+          <img className="logo-in-footer" src="/img/logo-in-footer.svg" alt="" />
+        )}
         <Footer_Block
           footer_title="discover-us"
           title="Discover us"

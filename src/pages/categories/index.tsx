@@ -18,7 +18,7 @@ const CategPage = (): React.ReactElement => {
           your favourite dish from Tatooine? Explore your possibilities below.{' '}
         </div>
         <CategSection />
-        <Footer logo="/img/logo-in-footer-green.svg" />
+        <Footer />
       </main>
     </>
   );
