@@ -7,10 +7,12 @@ import './style.css';
 const Footer = (): React.ReactElement => {
   const location = useLocation();
   const isCategoriesPage = location.pathname === '/categories';
+  const isRestoranPage = location.pathname === '/categories/:category/:restoran' || location.pathname === '/restorans/:restoran';
+  const ft_class = isRestoranPage ? 'footer-mr-ziro' : 'footer';
 
   return (
     <>
-      <div className="footer">
+      <div className={ft_class}>
         {isCategoriesPage ? (
           <img className="logo-in-footer" src="/img/logo-in-footer-green.svg" alt="" />
         ) : (

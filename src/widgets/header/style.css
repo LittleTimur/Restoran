@@ -1,7 +1,7 @@
 .container {
     padding: 0 56px;
   }
-  header {
+  .header {
     display: flex;
     align-items: center;
     color: #202020;
@@ -13,6 +13,12 @@
     width: 134.26336669921875px;
     height: 19.935205459594727px;
     margin: 11.39px 9.82px;
+  }
+  .logo-in-med{
+    display: none;
+  }
+  .btn-menu{
+    display: none;
   }
   .header-a{
     display: inline-block; /* Устанавливаем элемент как блочный */
@@ -49,4 +55,39 @@
     margin: 16px;
     width: 24px;
     height: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+    .header {
+      height: 56px;
+      padding: 0;
+      justify-content: center;
+    }
+    .logo {
+      display: none;
+    }
+    .btn-home {
+      display: none;
+    }
+    .btn-all-restaurants {
+      display: none;
+    }
+    .btn-shop {
+      display: none;
+    }
+    .logo-in-med {
+      display: block;
+      width: 42.1685905456543px;
+      height: 37.02049255371094px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .btn-menu {
+      display: block;
+      position: absolute;
+      left: 16px;
+    }
   }

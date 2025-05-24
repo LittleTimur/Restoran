@@ -3,6 +3,7 @@ import Footer from '../../widgets/Footer';
 import Header from '../../widgets/header';
 import { useParams } from 'react-router-dom';
 import RestoranAbout from './about';
+import RestoranSection from './section';
 import './style.css';
 
 const RestoranPage = (): React.ReactElement => {
@@ -17,6 +18,8 @@ const RestoranPage = (): React.ReactElement => {
         <div className="restoran-banner-title">{restoranTitle}</div>
       </div>
       <RestoranAbout title={restoran || ''} link={category || ''} />
+      <RestoranSection />
+      <RestoranSection />
       <Footer />
     </>
   );

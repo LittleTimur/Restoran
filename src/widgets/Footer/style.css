@@ -5,6 +5,13 @@
     background-color: #2C2C2C;
     margin-top: 72px;
   }
+  .footer-mr-ziro{
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    height: 451px;
+    background-color: #2C2C2C;
+  }
   .logo-in-footer{
     margin: 91px 0 0 209px;
     width: 120px;
@@ -54,3 +61,5 @@
     height: 109px;
     margin-right: 71px;
   }
+
+ 
