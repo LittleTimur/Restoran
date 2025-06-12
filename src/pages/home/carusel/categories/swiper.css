@@ -1,0 +1,27 @@
+.categories-swiper {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .categories-swiper {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .categories-swiper .swiper {
+    padding: 20px 0;
+    touch-action: pan-y pinch-zoom;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .categories-swiper .swiper-slide {
+    transition: transform 0.3s ease;
+  }
+
+  .categories-swiper .swiper-slide-active {
+    transform: scale(1);
+  }
+} 

@@ -1,0 +1,9 @@
+.categories-desktop {
+  display: block;
+}
+
+@media (max-width: 1279px) {
+  .categories-desktop {
+    display: none;
+  }
+} 

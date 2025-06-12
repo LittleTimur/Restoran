@@ -82,7 +82,7 @@
       display: block;
       width: 42.1685905456543px;
       height: 37.02049255371094px;
-      left: 50%;
+      margin-left: 55%;
       transform: translateX(-50%);
     }
     .btn-menu {
