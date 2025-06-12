@@ -22,7 +22,7 @@ const Header = (): React.ReactElement => {
             <Link to="/" className="header-a btn-home">
               Home
             </Link>
-            <Link to="/" className="header-a btn-all-restaurants">
+            <Link to="/all-restorans" className="header-a btn-all-restaurants">
               All restaurants
             </Link>
             <Link to="/order/1" className="header-a btn-shop">

@@ -13,7 +13,7 @@ const Food = (): React.ReactElement => {
     <>
       <Header />
       <div className="food-top-banner">
-        <img className="food-banner-photo" src={`/img/food-title-${category}.png`} alt="" />
+        <img className="food-banner-photo" src={`/img/food-title-pizza.png`} alt="" />
         <div className="food-banner-title">{categoryTitle}</div>
       </div>
       <Restorans title={category || ''} />

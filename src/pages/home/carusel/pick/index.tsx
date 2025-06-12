@@ -38,9 +38,9 @@ const Carusel_Pick = (): React.ReactElement => {
           <Card img="/img/pick_img.png" title="Mira" review_text="4.2  Very Good" />
           <Card img="/img/pick_img.png" title="Kara Fin" review_text="4.2  Very Good" />
           <Card img="/img/pick_img.png" title="'T Kuyltje" review_text="4.2  Very Good" />
-          <Card img="/img/pick_img.png" title="Пупупу" review_text="4.9  Very Good" />
-          <Card img="/img/pick_img.png" title="Красотка" review_text="4.9  Very Good" />
-          <Card img="/img/pick_img.png" title="Я ем людей" review_text="5.0  Very Good" />
+          <Card img="/img/pick_img.png" title="Laplas" review_text="4.9  Very Good" />
+          <Card img="/img/pick_img.png" title="Ria" review_text="4.9  Very Good" />
+          <Card img="/img/pick_img.png" title="To Space" review_text="5.0  Very Good" />
         </div>
         {offset !== 0 && (
           <button
