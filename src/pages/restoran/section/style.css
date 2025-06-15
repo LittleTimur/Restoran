@@ -1,8 +1,8 @@
 .restoran-section{
     background-color: #F9F9F9;
-    height: 506px;
     width: 100%;
     padding-top: 48px;
+    padding-bottom: 20px;
 }
 .restoran-section-title{
     margin-left: 57px;
@@ -20,4 +20,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+@media (max-width: 952px) {
+    .restoran-section{
+        text-align: center;
+    }
+    .restoran-section-title {
+        margin-left: 0;
+    }
+    .restoran-section-container {
+        margin-left: 0;
+        justify-content: center;
+        text-align: left;
+    }
 }

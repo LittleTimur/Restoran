@@ -175,3 +175,49 @@ textarea:focus {
   border-color: #202020;
   outline: none;
 }
+
+@media (max-width: 1250px) {
+  .order-banner {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .order-banner-title {
+    width: 100%;
+    text-align: center;
+  }
+  .order-main-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .order-form-wrapper {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+  }
+  .order-main-row > div:last-child {
+    order: 1;
+    margin-left: 0;
+  }
+}
+@media (max-width: 880px) {
+  .order-form-wrapper {
+    min-width: unset;
+    max-width: unset;
+  }
+  .order-form{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .order-form-row {
+    flex-direction: column;
+    gap: 16px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .order-form-group {
+    width: 100%;
+  }
+}

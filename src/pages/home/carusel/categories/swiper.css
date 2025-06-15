@@ -2,6 +2,28 @@
   display: none;
 }
 
+.categories-swiper .swiper-scrollbar {
+  height: 8px !important;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.categories-swiper .swiper-scrollbar-drag {
+  background: #8e8e8e !important;
+  border-radius: 4px;
+}
+
+.categories-swiper .swiper-scrollbar-horizontal {
+  left: 20px;
+  right: 20px;
+  width: auto;
+}
+
+/* Ensure the scrollbar is always visible */
+.swiper-scrollbar-hidden {
+  opacity: 1 !important;
+}
+
 @media (max-width: 1279px) {
   .categories-swiper {
     display: block;

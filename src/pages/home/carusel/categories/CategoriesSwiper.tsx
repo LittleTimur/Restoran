@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from './card';
 import 'swiper/css';
 import './swiper.css';
+import { Scrollbar } from 'swiper/modules';
+import 'swiper/css/scrollbar';
 
 const categories = [
   { title: 'Pizza', img: '/img/categories-img-1.png' },
@@ -18,7 +20,7 @@ const CategoriesSwiper: React.FC = () => {
     <div className="categories-swiper">
       <h2 className="categories-title">Categories</h2>
       <Swiper
-        modules={[]}
+        modules={[Scrollbar]}
         spaceBetween={16}
         slidesPerView={1.2}
         loop={true}
@@ -31,7 +33,7 @@ const CategoriesSwiper: React.FC = () => {
             slidesPerView: 1.2,
             spaceBetween: 16
           },
-          480: {
+          610: {
             slidesPerView: 2.2,
             spaceBetween: 16
           },
@@ -44,12 +46,18 @@ const CategoriesSwiper: React.FC = () => {
             spaceBetween: 16
           }
         }}
+        scrollbar={{
+          el: '.swiper-scrollbar',
+          hide: false,
+          draggable: true
+        }}
       >
         {categories.map((category, index) => (
           <SwiperSlide key={index}>
             <Card img={category.img} title={category.title} />
           </SwiperSlide>
         ))}
+        <div className="swiper-scrollbar"></div>
       </Swiper>
     </div>
   );

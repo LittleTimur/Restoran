@@ -23,7 +23,7 @@ const RestoranAbout: React.FC<Props> = ({ title, link }): React.ReactElement => 
                 About
             </div>
             <div className="restoran-about-block-description">
-                This restaurant is great for it’s atmosphere. Try the speciality dish.name
+                This restaurant is great for it’s atmosphere. Try the speciality pizza
             </div>
             <div className="restoran-about-block-review">
                 <img className="star" src="/img/star.svg" alt="" />{' '}

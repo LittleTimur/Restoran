@@ -13,7 +13,6 @@
     height: 240px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
   }
   .restoran-card-content{
     width: 356px;
@@ -97,4 +96,17 @@
     background-color: #E9E9E9;
     color: #636363;
     margin: 0;
+  }
+  @media (max-width: 464px) {
+    .restoran-card{
+      width: 328px;
+      min-width: 328px;   /* Минимальная ширина */
+      max-width: 328px;
+    }
+    .restoran_img{
+      width: 328px;  
+    }
+    .restoran-card-content{
+      width: 328px;
+    }
   }

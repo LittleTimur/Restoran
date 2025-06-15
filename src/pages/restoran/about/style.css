@@ -1,9 +1,10 @@
 .restoran-about-block{
-    width: 652px;
+    width: 90%;
     height: 249px;
     margin-top: 32px;
     margin-left: 56px;
     margin-bottom: 48px;
+    margin-right: 16px;
   }
   .restoran-about-block-link{
     margin: 0;
@@ -12,7 +13,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #7B7B7B;
   }
   .restoran-about-block-link-food{
@@ -40,7 +41,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #000000;
   }
   .restoran-about-block-review{
@@ -101,8 +102,17 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     background-color: #E9E9E9;
     color: #636363;
     margin: 0;
+  }
+  @media (max-width: 440px) {
+    .restoran-about-block {
+      margin-left: 16px;
+  }
+    .restoran-about-block-description{
+      width: 90%;
+      height: auto;
+  }
   }

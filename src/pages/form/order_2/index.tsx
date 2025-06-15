@@ -39,7 +39,7 @@ const Order2 = (): React.ReactElement => {
     <>
       <Header />
       <div className="order-banner">
-        <div className="order-banner-title">Your order at restaurant.name</div>
+        <div className="order-banner-title">Your order</div>
       </div>
       <div className="order-main-row">
         <div className="order-form-wrapper">

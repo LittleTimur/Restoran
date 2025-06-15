@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './style.css';
 
 const Header = (): React.ReactElement => {
   const location = useLocation();
   const isOrderPage = !location.pathname.match(/^\/order\/\d+$/);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <header className="header container">
         <Link to="/">
         <img className="logo" src="/img/logo.svg" alt="" />
         </Link>
+        <button className="btn-menu" onClick={() => setMenuOpen(!menuOpen)}>
+          <img src="/img/menu.svg" alt="" />
+        </button>
+        <Link to="/">
+          <img className="logo-in-med" src="/img/logo-in-footer.svg" alt="" />
+        </Link>
         {isOrderPage && (
           <>
-            <button className="btn-menu">
-              <img src="/img/menu.svg" alt="" />
-            </button>
-            <Link to="/">
-              <img className="logo-in-med" src="/img/logo-in-footer.svg" alt="" />
-            </Link>
             <Link to="/" className="header-a btn-home">
               Home
             </Link>
@@ -31,6 +33,15 @@ const Header = (): React.ReactElement => {
           </>
         )}
       </header>
+      {menuOpen && (
+        <div className="dropdown-menu">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/all-restorans">All restaurants</Link></li>
+            <li><Link to="/order/1">Shop</Link></li>
+          </ul>
+        </div>
+      )}
     </>
   );
 };

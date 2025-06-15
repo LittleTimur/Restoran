@@ -1,7 +1,6 @@
 .restorans-block-conteiner{
   display: flex;
-  justify-items: center;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 32px;
   gap: 24px;
@@ -28,4 +27,13 @@
   text-decoration-style: solid;
   text-underline-offset: 0%;
   text-decoration-thickness: 0%;
+}
+@media (max-width: 540px) {
+  .restoran-block{
+    margin: 32px 16px;
+  }
+  .restorans-block-conteiner {
+    display: flex;
+    justify-content: left;
+}
 }

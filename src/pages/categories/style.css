@@ -22,14 +22,13 @@
   height: 43px;
   font-weight: 700;
   font-size: 35.16px;
-  line-height: 100%;
+  line-height: 43px;
   letter-spacing: -0.02em;
   margin-top: 72px;
   margin-left: 56px;
   color: #202020;
 }
 .main-discovery{
-  width: 765px;
   height: 60px;
   font-family: var(--font-Hind);
   font-weight: 400;
@@ -77,4 +76,36 @@
   position: absolute;
   margin-top: 16px;
   margin-left: -411px;
+}
+@media (max-width: 520px) {
+  .main-title{
+    width: 100%;
+    margin-left: 16px;
+    font-size: 31.25px;
+    line-height: 40px;
+  }
+  .main-discovery{
+    font-size: 16px;
+    margin-left: 16px;
+  }
+  .categories-section{
+    margin-left: 16px;
+    margin-right: 0;
+  }
+  .categories-section-card{
+    width: 328px;
+    height: 246px;
+  }
+  .categories-section-card-img{
+    width: 328px;
+    height: 246px;
+  }
+  .categories-section-card-link{
+    margin-left: -320px;
+  }  
+} 
+@media (max-width: 358px) {
+  .main-title{
+    height: 80px;
+  }
 }

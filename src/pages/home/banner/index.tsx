@@ -10,8 +10,8 @@ const Banner = (): React.ReactElement => {
           <h2 className="banner-title">Award winning</h2>
           <h3 className="banner-text">The best restaurants near you!</h3>
           <Link to='/all-restorans' className="btn-banner">
-          Explore the best restaurants
-      </Link>
+            Explore the best restaurants
+          </Link>
         </div>
         <div className="banner-mini-cards">
           <div className="banner-column-1">
