@@ -11,26 +11,32 @@ const restaurants = [
   {
     title: "Mira",
     review_text: "4.2  Very Good",
+    img: "/img/restoran-mira.png"
   },
   {
     title: "Pizza Palace",
     review_text: "4.5  Excellent",
+    img: "/img/restoran-kara fin.png"
   },
   {
     title: "Burger Bliss",
     review_text: "3.9  Good",
+    img: "/img/restoran-kuyltje.png"
   },
   {
     title: "Sushi Spot",
     review_text: "4.8  Outstanding",
+    img: "/img/restoran-laplas.png"
   },
   {
     title: "Pasta Perfection",
     review_text: "4.1  Good",
+    img: "/img/restoran-ria.png"
   },
   {
     title: "Green Garden",
     review_text: "4.3  Very Good",
+    img: "/img/restoran-to space.png"
   },
 ];
 
@@ -48,7 +54,7 @@ const Restorans: React.FC<Props> = ({ title }): React.ReactElement => {
             {restaurants.map((restoran, index) => (
                 <RestoranCard 
                     key={index}
-                    img="/img/food-categories-restoran.png" 
+                    img={restoran.img} 
                     title={restoran.title} 
                     review_text={restoran.review_text} 
                     food={title}

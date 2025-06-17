@@ -25,8 +25,8 @@ const Footer = (): React.ReactElement => {
           link_title1="Home"
           link2="/categories"
           link_title2="Categories"
-          link3="/"
-          link_title3="About"
+          link3="/order/1"
+          link_title3="Shop"
         />
         <Footer_Block
           footer_title="social-media"
@@ -40,13 +40,13 @@ const Footer = (): React.ReactElement => {
         />
         <Footer_Block
           footer_title="our-apps"
-          title="Check our apps"
-          link1="/"
-          link_title1="Link"
-          link2="/"
-          link_title2="Link"
+          title="Contacts"
+          link1="tel:+1234567890"
+          link_title1="Phone"
+          link2="mailto:info@restoran.com"
+          link_title2="Mail"
           link3="/"
-          link_title3="Link"
+          link_title3="None"
         />
       </div>
     </>

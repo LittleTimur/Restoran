@@ -7,12 +7,12 @@ import { Scrollbar } from 'swiper/modules';
 import 'swiper/css/scrollbar';
 
 const categories = [
-  { title: 'Pizza', img: '/img/categories-img-1.png' },
-  { title: 'Burger', img: '/img/categories-img-1.png' },
-  { title: 'Sushi', img: '/img/categories-img-1.png' },
-  { title: 'Pasta', img: '/img/categories-img-1.png' },
-  { title: 'Salad', img: '/img/categories-img-1.png' },
-  { title: 'Dessert', img: '/img/categories-img-1.png' },
+  { title: 'Pizza', img: '/img/categories-img-pizza.png' },
+  { title: 'Burger', img: '/img/categories-img-burger.png' },
+  { title: 'Sushi', img: '/img/categories-img-sushi.png' },
+  { title: 'Asian', img: '/img/categories-img-asian.png' },
+  { title: 'Snacks', img: '/img/categories-img-snacks.png' },
+  { title: 'Dessert', img: '/img/categories-img-dessert.png' },
 ];
 
 const CategoriesSwiper: React.FC = () => {
@@ -30,7 +30,7 @@ const CategoriesSwiper: React.FC = () => {
         resistanceRatio={0.85}
         breakpoints={{
           320: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 16
           },
           610: {

@@ -41,8 +41,7 @@
 }
 .categories-section{
   display: flex;
-  justify-items: center;
-  align-items: center;
+  justify-content:center;
   flex-wrap: wrap;
   margin: 40px 56px;
   gap: 24px;

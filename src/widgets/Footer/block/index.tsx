@@ -49,7 +49,7 @@ const Footer_Block: React.FC<Props> = ({
         <h2 className="footer-title">{title}</h2>
         {renderLink(link1, link_title1)}
         {renderLink(link2, link_title2)}
-        {renderLink(link3, link_title3)}
+        {link_title3 !== 'None' && renderLink(link3, link_title3)}
       </div>
     </>
   );

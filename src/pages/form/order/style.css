@@ -145,6 +145,26 @@
   background: #fff;
 }
 
+/* Стили для ошибок валидации */
+.order-form-group input.error {
+  border: 2px solid #ff4444;
+  background: #fff5f5;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 14px;
+  margin-top: 4px;
+  font-family: var(--font-Hind);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.order-form-group input.error:focus {
+  outline: 2px solid #ff4444;
+  background: #fff5f5;
+}
+
 .order-next-btn:hover {
   background: #444;
 }

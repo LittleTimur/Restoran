@@ -422,4 +422,22 @@
   .Ladies{
     display: none;
   }
+  .categories-card{
+    width: 200px;
+    min-width: 200px;   /* Минимальная ширина */
+    max-width: 200px;
+    height: 197px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .categories {
+    margin: 63px 16px 0 16px;
+}
 }

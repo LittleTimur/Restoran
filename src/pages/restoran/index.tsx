@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Footer from '../../widgets/Footer';
 import Header from '../../widgets/header';
 import { useParams } from 'react-router-dom';
@@ -77,16 +78,28 @@ const desserts = [
 
 const RestoranPage = (): React.ReactElement => {
   const { restoran } = useParams<{ restoran: string }>();
-  const restoranTitle = restoran ? restoran.charAt(0).toUpperCase() + restoran.slice(1) : '';
+  
+  const capitalizeWords = (str: string): string => {
+    return str.split(' ').map(word => 
+      word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+  };
+  
+  const restoranTitle = restoran ? capitalizeWords(restoran) : '';
   const { category } = useParams<{ category: string }>();
+  const categoryTitle = category ? capitalizeWords(category) : '';
   return (
     <>
+      <Helmet>
+        <title>{restoranTitle} - Restaurant | MealDrop</title>
+        <meta name="description" content={`Order delicious food from ${restoranTitle} restaurant. Fast delivery and great prices on MealDrop.`} />
+      </Helmet>
       <Header />
       <div className="restoran-top-banner">
         <img className="restoran-banner-photo" src={`/img/restoran-title-mira.png`} alt="" />
         <div className="restoran-banner-title">{restoranTitle}</div>
       </div>
-      <RestoranAbout title={restoran || ''} link={category || ''} />
+      <RestoranAbout title={restoran || ''} titleTo={restoranTitle || ''} link={category || ''} linkTitle = {categoryTitle || ''} />
       <RestoranSection title="Main Dishes" dishes={mainDishes} />
       <RestoranSection title="Appetizers" dishes={appetizers} />
       <RestoranSection title="Desserts" dishes={desserts} />

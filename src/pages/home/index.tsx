@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Header from '../../widgets/header';
 import Banner from './banner';
 import Carusel_Pick from './carusel/pick';
@@ -11,6 +12,10 @@ import './style.css';
 const HomePage = (): React.ReactElement => {
   return (
     <>
+      <Helmet>
+        <title>MealDrop - Find Your Next Meal</title>
+        <meta name="description" content="Discover the best restaurants and order delicious food online with MealDrop" />
+      </Helmet>
       <Header />
       <main>
         <div className="hungry">

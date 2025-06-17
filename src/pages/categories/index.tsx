@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Footer from '../../widgets/Footer';
 import Header from '../../widgets/header';
 import CategSection from './section';
@@ -7,6 +8,10 @@ import './style.css';
 const CategPage = (): React.ReactElement => {
   return (
     <>
+      <Helmet>
+        <title>Categories - MealDrop</title>
+        <meta name="description" content="Explore food categories: Pizza, Burgers, Sushi, Asian, Snacks, Desserts and more on MealDrop" />
+      </Helmet>
       <Header />
       <main>
         <div className="top-banner">
